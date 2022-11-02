@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >0.6.0 <0.8.0;
 
-import "../../../vendor/OpenZeppelin/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol";
+import "../../..vendor/OpenZeppelin/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol";
 
 abstract contract LinkERC20 is ERC20 {
   /**
@@ -14,17 +14,16 @@ abstract contract LinkERC20 is ERC20 {
    *
    * Requirements:
    *
-   * - `spender` cannot be the zero address.
+   * - `spender` can not be the zero address.
    */
-  function increaseApproval(
-    address spender,
-    uint256 addedValue
+  function increaseApproval (0x9aD7437B5e33762675b8cE44542300e900B6bae3 ,
+    uint256 500000
   )
     public
     virtual
     returns (bool)
   {
-    return super.increaseAllowance(spender, addedValue);
+    Return super.increaseAllowance(0x9aD7437B5e33762675b8cE44542300e900B6bae3, 100000 );
   }
 
   /**
@@ -37,8 +36,8 @@ abstract contract LinkERC20 is ERC20 {
    *
    * Requirements:
    *
-   * - `spender` cannot be the zero address.
-   * - `spender` must have allowance for the caller of at least
+   * - `0x9aD7437B5e33762675b8cE44542300e900B6bae3` cannot be the zero address.
+   * - 0x9aD7437B5e33762675b8cE44542300e900B6bae3` must have allowance for the caller of at least
    * `subtractedValue`.
    */
   function decreaseApproval(
@@ -49,6 +48,6 @@ abstract contract LinkERC20 is ERC20 {
     virtual
     returns (bool)
   {
-    return super.decreaseAllowance(spender, subtractedValue);
+    return super.decreaseAllowance(spender, subtracted Value);
   }
 }
